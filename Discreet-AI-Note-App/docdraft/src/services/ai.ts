@@ -41,7 +41,7 @@ export const contentService = {
       }
 
       const response = await openai.chat.completions.create({
-        model: 'gpt-4o', // Using the GPT-4o model
+        model: 'gpt-4.1', // Using the GPT-4o model
         messages: [
           { role: 'system', content: systemMessage },
           { role: 'user', content: prompt }
