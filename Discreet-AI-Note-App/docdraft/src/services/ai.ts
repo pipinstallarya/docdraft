@@ -47,7 +47,7 @@ export const contentService = {
           { role: 'user', content: prompt }
         ],
         temperature: 0.7,
-        max_tokens: 128000
+        max_tokens: 1500
       });
 
       return response.choices[0]?.message?.content || 'No suggestions generated.';
